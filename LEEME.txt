@@ -1,0 +1,24 @@
+GROUP VEN — COPIA LOCAL COMPLETA
+
+PARA ABRIR LA PÁGINA
+Haz doble clic en index.html, o en ABRIR PAGINA.cmd.
+No necesitas instalar programas ni subir archivos a un servicio.
+
+CONTENIDO
+index.html: página principal.
+testimonios.html: testimonios de clientes y video.
+style.css: colores, diseño y adaptación a celulares.
+app.js: servicios interactivos y animaciones.
+legal.js: política de privacidad y términos y condiciones.
+assets: fotografía, logos y video de testimonio.
+
+Puedes mover esta carpeta completa a otro lugar o a una memoria USB.
+Conserva los nombres y la organización de los archivos.
+
+La página, sus imágenes y el video están guardados en esta computadora.
+WhatsApp e Instagram necesitan Internet cuando haces clic en sus enlaces.
+Esta copia usa fuentes de tu computadora; las letras pueden variar un poco
+respecto a la versión que descargaba fuentes de Google.
+
+Esta entrega recupera los archivos locales existentes de Group VEN.
+No publica nada ni cambia el dominio o la página que ya esté en Internet.

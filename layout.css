@@ -87,3 +87,6 @@ footer .brand-logo{width:150px}
 .brand-showcase-logo{display:block;width:min(100%,360px);height:auto;margin:0 0 20px;object-fit:contain}
 @media(max-width:800px){header .brand-logo{width:120px}header{min-height:85px}footer .brand-logo{width:130px}}
 @media(max-width:380px){header .brand-logo{width:108px}}
+
+/* Redes sociales en el pie de página. */
+.footer-socials{width:100%;display:flex;justify-content:center;padding-top:18px}.footer-socials a{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:10px 17px;border:1px solid #102d3230;border-radius:28px;font-size:14px!important;line-height:1.5;transition:background-color .2s,color .2s}.footer-socials a:hover{background:var(--mint)}.footer-socials a:focus-visible{outline:3px solid var(--petrol);outline-offset:4px}.footer-socials svg{flex-shrink:0}@media(prefers-reduced-motion:reduce){.footer-socials a{transition:none}}

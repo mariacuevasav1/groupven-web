@@ -1,0 +1,89 @@
+/* Espaciado fluido y contenido legible en móvil y escritorio. */
+body{overflow-wrap:break-word}
+img,video{max-width:100%}
+.button{max-width:100%;align-items:center;line-height:1.5}
+.button>span{flex-shrink:0}
+.hero{height:auto;max-height:none;min-height:720px;padding-bottom:36px}
+.hero>.eyebrow,.hero>h1,.hero-bottom,.hero>.scroll{position:relative;z-index:2;width:58%;max-width:800px}
+.hero h1{font-size:clamp(62px,7.5vw,126px);line-height:1.08;letter-spacing:-.055em;margin:36px 0 28px}
+.hero-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:0}
+.hero-bottom p{margin:0 0 10px;max-width:420px}
+.hero-bottom .portfolio-button{margin-top:0}
+.hero>.scroll{display:block;bottom:auto;margin-top:36px;line-height:1.6;font-size:10px;letter-spacing:1.5px}
+.hero .orbit{pointer-events:none;right:0;top:12%;font-size:clamp(230px,30vw,500px);z-index:0}
+.hero .floating{pointer-events:none;max-width:34%;z-index:1}
+.hero .one{right:5%;top:42%;font-size:clamp(18px,1.7vw,25px)}
+.hero .two{right:8%;bottom:12%;padding:18px 22px}
+.services .section-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);column-gap:7%;align-items:end}
+.services .section-head>.eyebrow{grid-column:1/-1}
+.services .section-head h2{grid-column:1}
+.services .section-head>p{position:static;grid-column:2;margin-bottom:24px;max-width:320px}
+.explorer,.founder,.testimonial-preview,.project,.support-grid,.portfolio-hero,.portfolio-ai,.portfolio-personal-contact{min-width:0}
+.explorer>*,.founder>*,.testimonial-preview>*,.project>*,.support-grid>*,.portfolio-hero>*,.portfolio-ai>*,.portfolio-personal-contact>*{min-width:0}
+.panel-art{height:auto;min-height:155px;padding-bottom:18px}
+.bubble{line-height:1.5}
+.faq summary{align-items:center;line-height:1.5;min-height:44px}
+.faq summary>span{flex-shrink:0}
+.founder-tag{max-width:calc(100% - 36px);line-height:1.5}
+.eyebrow{line-height:1.7}
+.contact h2{position:relative;line-height:1.08}
+.contact h2>span{position:absolute;right:0;top:0;float:none;font-size:clamp(64px,10vw,160px)}
+.text-link,.instagram-link{line-height:1.6}
+.legal-cloud-head h2{overflow-wrap:anywhere}
+.legal-close,.legal-done{min-height:44px}
+.reveal{opacity:1;transform:none}
+@media(max-width:1100px){
+ header{height:auto;min-height:90px;gap:18px;padding:18px 5%;flex-wrap:wrap}
+ header nav{order:3;display:flex;flex:0 0 100%;max-width:100%;gap:24px;overflow-x:auto;white-space:nowrap;padding:5px 0 9px;line-height:1.5}
+ header nav a{flex-shrink:0;min-height:30px;display:inline-flex;align-items:center}
+ header>.navcta{margin-left:auto}
+ html{scroll-padding-top:35px}
+ .hero .floating{max-width:31%}
+ .hero .one{right:3%;padding:20px;font-size:20px}
+ .hero .two{right:3%;font-size:9px;padding:15px}
+ .hero .two span{margin-left:10px}
+}
+@media(max-width:800px){
+ header{padding:16px 6%;gap:12px;min-height:74px}
+ header nav{font-size:13px;gap:22px}
+ .hero{min-height:0;padding:36px 6% 32px}
+ .hero>.eyebrow,.hero>h1,.hero-bottom,.hero>.scroll{width:100%;max-width:none}
+ .hero h1{font-size:clamp(48px,11.5vw,90px);margin:30px 0 26px;letter-spacing:-.05em}
+ .hero-bottom{gap:14px}
+ .hero-bottom p{max-width:430px;font-size:16px;line-height:1.75}
+ .hero-bottom .button{padding:17px 23px;font-size:13px;gap:22px}
+ .hero>.scroll{margin-top:32px;font-size:9px}
+ .hero .floating{display:none}
+ .hero .orbit{top:18px;bottom:auto;right:-75px;font-size:250px;opacity:.13}
+ .services .section-head{display:block}
+ .services .section-head>p{margin-bottom:0;max-width:400px}
+ .contact h2{font-size:clamp(60px,12vw,96px);letter-spacing:-.05em}
+ .contact h2>span{font-size:60px;top:-10px}
+ .statement-foot{gap:24px}
+ .statement-foot .asterisk{font-size:65px;flex-shrink:0}
+ .founder-tag{transform:none;left:14px;right:14px;max-width:none;font-size:9px}
+ footer{align-items:flex-start;gap:20px}
+ footer p{width:auto}
+ footer small{width:100%}
+ .legal-cloud-foot{flex-wrap:wrap}
+ .legal-cloud-foot span{max-width:none;flex:1 1 160px}
+ .support-visual{margin-top:20px}
+}
+@media(max-width:380px){
+ .brand{font-size:24px}.brand i{font-size:27px;margin-left:5px}
+ .navcta{font-size:12px;padding:10px 15px}
+ .contact h2>span{display:none}
+ .service-panel{padding:25px}
+ .tabs button{gap:12px}.tabs button span{font-size:17px}
+ .bubble{width:90%;font-size:11px}.bubble.reply{margin-left:10%;width:90%}
+ .legal-cloud-head{gap:10px}.legal-cloud-head h2{font-size:23px}
+}
+
+/* Logo aprobado: GROUP negro, asterisco en la O y VEN en colores. */
+header>.brand,footer>.brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1}
+.brand-logo{display:block;width:144px;height:auto;max-width:100%;object-fit:contain}
+header{height:auto;min-height:100px;padding-top:14px;padding-bottom:14px}
+footer .brand-logo{width:150px}
+.brand-showcase-logo{display:block;width:min(100%,360px);height:auto;margin:0 0 20px;object-fit:contain}
+@media(max-width:800px){header .brand-logo{width:120px}header{min-height:85px}footer .brand-logo{width:130px}}
+@media(max-width:380px){header .brand-logo{width:108px}}

@@ -1,0 +1,25 @@
+/* Mouvement progressif, sans masquer le contenu si JavaScript est désactivé. */
+.button,.navcta{transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.button:active,.navcta:active{transform:translateY(0) scale(.98)}
+.project-image,.company-logo,.support-visual{transition:transform .4s ease,box-shadow .4s ease}
+.project-image,.portrait-main,.portrait-work,.portrait-contact,.founder-art{isolation:isolate}
+.project-image img,.portrait-main img,.portrait-work img,.portrait-contact img,.founder-photo{transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.support-grid article{transition:transform .35s ease}
+.text-link,.instagram-link{transition:color .2s ease,text-decoration-color .2s ease}
+.portfolio-marquee-track{animation-duration:28s}
+@media(hover:hover) and (pointer:fine){
+.button:hover,.navcta:hover{transform:translateY(-4px);box-shadow:0 9px 24px #102d3220}
+.project-image:hover,.company-logo:hover{transform:translateY(-5px);box-shadow:0 16px 36px #102d3218}
+.project-image:hover img{transform:scale(1.025)}
+.portrait-main:hover img,.portrait-work:hover img,.portrait-contact:hover img,.founder-art:hover .founder-photo{transform:scale(1.035)}
+.support-grid article:hover{transform:translateY(-5px)}
+.support-grid article:hover .support-visual{box-shadow:0 12px 28px #102d3215}
+.text-link:hover,.instagram-link:hover{color:var(--petrol)}
+}
+.hero .dot{animation:gv-dot-pulse 3s ease-in-out infinite}
+@keyframes gv-dot-pulse{0%,100%{box-shadow:0 0 0 0 #102d3225}55%{box-shadow:0 0 0 7px #102d3200}}
+@media(prefers-reduced-motion:reduce){
+.button,.navcta,.project-image,.company-logo,.support-visual,.project-image img,.portrait-main img,.portrait-work img,.portrait-contact img,.founder-photo,.support-grid article,.text-link,.instagram-link{transition:none!important;animation:none!important}
+.button:hover,.navcta:hover,.project-image:hover,.company-logo:hover,.project-image:hover img,.portrait-main:hover img,.portrait-work:hover img,.portrait-contact:hover img,.founder-art:hover .founder-photo,.support-grid article:hover{transform:none!important}
+.hero .dot{animation:none}
+}
